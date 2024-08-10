@@ -75,5 +75,3 @@ connection.commit()
 # Close the database connection
 cursor.close()
 connection.close()
-
-
