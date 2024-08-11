@@ -10,8 +10,6 @@ This project is designed to manage and analyze entry-level job listings at CERN,
 - [Project Structure](#project-structure)
 - [Database Schema](#database-schema)
 - [Usage](#usage)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [TODO](#todo)
 
 ## Project Structure
