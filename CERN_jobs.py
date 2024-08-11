@@ -23,7 +23,7 @@ soup = BeautifulSoup(response.content, 'html.parser')
 # Find all job postings on the page
 job_postings = soup.find_all('li', class_='opening-job')
 
-# record current division and department I am aware to label
+# record current division and department I know to label
 known_department = {"IR": "International Relations", "SCE": "Site and Civil Engineering Department", "TE": "Technology Department", "SY": "Accelerator Systems Department",
                     "EN": "Enginering Department", "DG": "Legal", "FAP": "Finance and Administrative Process", "EP": "Experimental Physics Department", "IT": "Information Technology"}
 known_division = {"ABT": "Accelerator Beam Transfer", "AR": "Administration and Resources", "BI": "Beam Instrumentation", "EPC": "Electrical Power Converters", "RF": "Radio Frequency",
@@ -75,3 +75,5 @@ connection.commit()
 # Close the database connection
 cursor.close()
 connection.close()
+
+

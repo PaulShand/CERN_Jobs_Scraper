@@ -1,0 +1,61 @@
+"POSITION","SKILL_TEXT","DEADLINE"
+"System Administrator","Computer hardware troubleshooting and maintenance",11/08/24
+"System Administrator","Linux Operating System, in particular RHEL variants",11/08/24
+"System Administrator","Scripting languages (e.g. Bash, Python)",11/08/24
+"System Administrator","Development tools on Linux (e.g. Git)",11/08/24
+"Tier-0 DevOps Engineer","Understanding of Grid infrastructures and Grid technologies is a plus",11/08/24
+"Tier-0 DevOps Engineer","Good communication skills and ability to work independently",11/08/24
+"Tier-0 DevOps Engineer","Basic experience with SQL databases (Oracle knowledge is a plus)",11/08/24
+"Tier-0 DevOps Engineer","Ability to troubleshoot and optimize complex systems",11/08/24
+"Tier-0 DevOps Engineer","Proficiency in Linux, shell scripting, and bash",11/08/24
+"Tier-0 DevOps Engineer","Experience with Python",11/08/24
+"Power Integrity Design Engineer","Basic knowledge of digital and RTL design.",12/08/24
+"Power Integrity Design Engineer","Software experience in Python and TCL.",12/08/24
+"Power Integrity Design Engineer","Fluent in English, the ability to work in French would be an advantage.",12/08/24
+"Power Integrity Design Engineer","Good knowledge of the full digital backend design flow using Cadence suite including Innovus, Tempus and Voltus.",12/08/24
+"Mechanical Engineer","Be very familiar with numerical mechanics and software analysis tools, preferably with Ansys.",13/08/24
+"Mechanical Engineer","Fluent in English, the ability to work in French would be an advantage.",13/08/24
+"Mechanical Engineer","Knowledge of instrumentation hardware and data taking/analysis would be an asset.",13/08/24
+"Mechanical Engineer","Familiarity with engineering design using CAD software (CATIA in particular).",13/08/24
+"Mechanical Engineer","Master heat transfer and static structural calculations.",13/08/24
+"CAD/CAM-CNC Workshop Technician","Subtractive machining of metals and glass fiber with numerical controlled machines;",15/08/24
+"CAD/CAM-CNC Workshop Technician","G-code trajectory programming for NC manufacturing machines;",15/08/24
+"CAD/CAM-CNC Workshop Technician","CAM software : ISO G-code, Siemens ShopMill & ShopTurn, G-code post-processors;",15/08/24
+"CAD/CAM-CNC Workshop Technician","-Reading mechanical drawings with ISO standards dimensioning;",15/08/24
+"CAD/CAM-CNC Workshop Technician","Fluent in English OR French, the ability to rapidly acquire a second language would be a plus.",15/08/24
+"CAD/CAM-CNC Workshop Technician","CAD software : CATIA, BricsCAD - GMAO software",15/08/24
+"Vacuum Technician","Knowledge of 3D manufacturing technologies;",15/08/24
+"Vacuum Technician","Traditional manufacturing techniques; turning and milling capabilities;",15/08/24
+"Vacuum Technician","Fluent in English, the ability to work in French would be an advantage.",15/08/24
+"Vacuum Technician","Experience with 3D modelling with CATIA;",15/08/24
+"Vacuum Technician","Basic knowledge of vacuum techniques and engineering;",15/08/24
+"Controls Software Developer","Fluent in English, the ability to work in French would be an advantage.",18/08/24
+"Controls Software Developer","Optional: Python Skills: Proficiency in Python programming, including scientific computing & visualization libraries. Understanding of control theory principles, system modeling, stability analysis.",18/08/24
+"Controls Software Developer","Required: C++ skills: Proficiency in C++ programming, including maintenance and porting of software, debugging and optimizing code, object-oriented programming, and version control (e.g., Git).",18/08/24
+"Artificial Intelligence Engineer in DAQ Systems","Experience with software development tools in a Linux environment.",19/08/24
+"Artificial Intelligence Engineer in DAQ Systems","Experience with AI models and algorithms and their applications to data science.",19/08/24
+"Artificial Intelligence Engineer in DAQ Systems","Fluent in English, the ability to work in French would be an advantage.",19/08/24
+"Mechanical Technician","Comprehensive use of conventional milling machines with some basic knowledge of numerical controlled machines (CNC);",26/08/24
+"Mechanical Technician","Knowledge of CAD software;",26/08/24
+"Mechanical Technician","Good communication.",26/08/24
+"Mechanical Technician","Fluent in English, the ability to work in French would be an advantage.",26/08/24
+"Mechanical Technician","Precision assembly of mechanical components and structures;",26/08/24
+"Machine Learning Engineer","Knowledge of supply chain analysis and tools would be an advantage;",29/08/24
+"Machine Learning Engineer","Fluent in English, the ability to work in French would be an advantage.",29/08/24
+"Machine Learning Engineer","Expert knowledge of Python programming language, common deep learning frameworks, machine learning algorithms, federated learning tools and algorithms;",29/08/24
+"Machine Learning Engineer","Familiarity with GNNs, risks and anomaly detection algorithms;",29/08/24
+"Junior Electronics Engineer - Validation and Testing","Design of electronics board test equipment and test interface board;",30/08/24
+"Junior Electronics Engineer - Validation and Testing","Experience in electronics test process;",30/08/24
+"Junior Electronics Engineer - Validation and Testing","Experience in electronics design and development;",30/08/24
+"Junior Electronics Engineer - Validation and Testing","Knowledge of Python programming language.",30/08/24
+"Electrical Design Technician","A good understanding of power systems; voltage drop calculations, short circuit calculations, understanding fault levels, dimensioning of cables",01/09/24
+"Electrical Design Technician","Experience on low voltage design calculation tools (ElecCalc, Caneco or similar software)",01/09/24
+"Electrical Design Technician","Proficient in AutoCAD",01/09/24
+"Electrical Design Technician","An understanding of low voltage distribution networks (selectivity, completing calculation notes, knowledge of European LV standards, protection, protection of circuits for indirect contact, knowledge of different types of earthing systems)",01/09/24
+"Junior Software Engineer (C++, Python)","Knowledge of the C++ language: how to write, compile and run programs; developing code for a package; concepts of thread-safety",01/09/24
+"Junior Software Engineer (C++, Python)","Python knowledge and experience with writing code for a repository",01/09/24
+"Junior Software Engineer (C++, Python)","Experience with software version control (e.g. git)",01/09/24
+"Mechanical Engineer for CMS Tracker","Knowledge of two-phase cooling",15/09/24
+"Mechanical Engineer for CMS Tracker","Quality control",15/09/24
+"Mechanical Engineer for CMS Tracker","Fluent in English, the ability to work in French would be an advantage.",15/09/24
+"Mechanical Engineer for CMS Tracker","Design and testing of mechanical structures",15/09/24

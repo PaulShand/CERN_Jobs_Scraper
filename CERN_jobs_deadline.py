@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 import re
 
-def convert_to_sql_date(date_str):
+def convert_to_sql_date(date_str: str) -> str:
     date_str = re.sub(r'\s*at.*$', '', date_str)
     # Define patterns to match different date formats
     date_patterns = [
@@ -44,7 +44,7 @@ def convert_to_sql_date(date_str):
                     month = months[month]
                 return f"{datetime.now().year}-{month.zfill(2)}-{day.zfill(2)}"
     
-    # If no pattern matches, raise an error or return None
+    # If no pattern matches, raise an error
     raise ValueError(f"Date format not recognized: {date_str}")
 
 
@@ -63,19 +63,12 @@ jobs = cursor.fetchall()
 
 
 # Function to parse the job page and find the deadline
-def find_deadline(job_link):
+def find_deadline(job_link: str) -> str:
     response = requests.get(job_link)
-
     soup = BeautifulSoup(response.content, 'html.parser')
-    # Example search patterns for a deadline (modify as needed based on actual HTML structure)
-    # This example assumes the deadline might be in a <div> or <p> with a specific class or text
     deadline = soup.find('div', class_='wysiwyg', itemprop='incentives').find('p').find('strong').text.strip()
     deadline = convert_to_sql_date(deadline)
-    # for tag in soup.find_all(['p', 'div']):
-    #     if 'deadline' in tag.text.lower():
-    #         deadline = tag.text.strip()
-    #         break
-    return deadline + " 14:59:00" if deadline else "Deadline not found"
+    return deadline + " 14:59:00"
 
 
 
@@ -83,8 +76,7 @@ def find_deadline(job_link):
 for work_tag, job_link, deadline in jobs:
         if not deadline:
             deadline = find_deadline(job_link)
-            # print(f"Work Tag: {work_tag}")
-            # print(f"Job Link: {job_link}")
+            print(f"Work Tag: {work_tag}")
             print(f"Deadline: {deadline}")
             print(work_tag)
             cursor.execute('''UPDATE CERN_Listing SET DEADLINE = TO_DATE(:deadline, 'YYYY-MM-DD HH24:MI:SS') WHERE WORKTAG = :work_tag''', [deadline, work_tag])
