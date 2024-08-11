@@ -1,6 +1,3 @@
-# update CERN_listing deadline
-# get a new table with work_tag and there needed skills
-
 import requests
 from bs4 import BeautifulSoup
 from typing import TypeAlias
@@ -61,7 +58,7 @@ dsn = os.getenv('ORACLE_DB_DSN')
 connection = oracledb.connect(user=username, password=password, dsn=dsn, mode=oracledb.SYSDBA)
 cursor = connection.cursor()
 
-cursor.execute("SELECT worktag, job_link FROM CERN_Listing")
+cursor.execute("SELECT worktag, job_link, deadline FROM CERN_Listing")
 jobs = cursor.fetchall()
 
 
@@ -78,18 +75,19 @@ def find_deadline(job_link):
     #     if 'deadline' in tag.text.lower():
     #         deadline = tag.text.strip()
     #         break
-    return deadline if deadline else "Deadline not found"
+    return deadline + " 14:59:00" if deadline else "Deadline not found"
 
 
 
 # Iterate through each job and find the deadline
-for work_tag, job_link in jobs:
-    deadline = find_deadline(job_link)
-    # print(f"Work Tag: {work_tag}")
-    # print(f"Job Link: {job_link}")
-    print(f"Deadline: {deadline}")
-    print(work_tag)
-    cursor.execute('''UPDATE CERN_Listing SET DEADLINE = TO_DATE(:deadline, 'YYYY-MM-DD') WHERE WORKTAG = :work_tag''', [deadline, work_tag])
+for work_tag, job_link, deadline in jobs:
+        if not deadline:
+            deadline = find_deadline(job_link)
+            # print(f"Work Tag: {work_tag}")
+            # print(f"Job Link: {job_link}")
+            print(f"Deadline: {deadline}")
+            print(work_tag)
+            cursor.execute('''UPDATE CERN_Listing SET DEADLINE = TO_DATE(:deadline, 'YYYY-MM-DD HH24:MI:SS') WHERE WORKTAG = :work_tag''', [deadline, work_tag])
 
 # Commit the changes and close the connection
 connection.commit()
